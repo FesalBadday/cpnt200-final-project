@@ -1,15 +1,15 @@
 <template>
-<<main>
-  <Navigation />
-  <Header :pageInfo="siteInfo" />
-  <article>
-  <ul>
-    <li v-for="post in posts" :key="post.slug"
-      <NuxtLink :to="'blog/${post.slug}'">{{ post.title }}</NuxtLink>
-    </li>
-  </ul>
-  </article>
-  <Footer :pageInfo="siteInfo" />
+  <main>
+    <Navigation />
+    <Header :pageInfo="siteInfo" />
+    <article>
+      <ul>
+        <li v-for="post in posts" :key="post.slug">
+          <NuxtLink :to="`blog/${post.slug}`">{{ post.title }}</NuxtLink>
+        </li>
+      </ul>
+    </article>
+    <Footer :pageInfo="siteInfo" />
   </main>
 </template>
 
@@ -24,12 +24,12 @@ export default {
     };
   },
 
-      // fetch the data from blog in the content folder
+  // fetch the data from blog in the content folder
   async asyncData({ $content, params, error }) {
     try {
-      const post = await $content(`blog`).fetch();
+      const posts = await $content(`blog`).fetch();
       return {
-        post,
+        posts,
       };
     } catch (error) {
       error("No article found");
