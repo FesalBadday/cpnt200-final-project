@@ -8,7 +8,7 @@
           <TailwindSvg v-if="post.title === 'Tailwind CSS'" />
           <VueSvg v-if="post.title === 'Vue.js'" />
           <NuxtSvg v-if="post.title === 'Nuxt.js'" />
-          <NuxtLink class="hover:text-pink-600" :to="`blog/${post.slug}`">{{ post.title }}</NuxtLink>
+          <NuxtLink class="hover:text-pink-600" :to="`/blog/${post.slug}`">{{ post.title }}</NuxtLink>
         </li>
       </ul>
     </article>
