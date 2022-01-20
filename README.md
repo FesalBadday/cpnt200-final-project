@@ -10,7 +10,7 @@
 
  ---
 
-### :arrow_forward: Repo : [Github Repo](https://github.com/FesalBadday/cpnt200-final-project)
+### :arrow_forward: Repo : [Github Repo](https://github.com/FesalBadday/jamstack-website)
 
 ### :arrow_forward: Site : [Netlify Page](https://fastvue.netlify.app)
 
