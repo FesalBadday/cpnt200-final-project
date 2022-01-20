@@ -1,4 +1,4 @@
-# Assignment 6 - JAMStack Website
+# JAMStack Website
 
 ## :star2: FastVue :star2:
 
